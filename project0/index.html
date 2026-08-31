@@ -82,6 +82,58 @@
         .part2_notes {
             padding-bottom: 0;
         }
+
+        .part3_feature {
+            width: 420px;
+            margin: 0 auto;
+        }
+
+        .part3_feature a {
+            display: block;
+        }
+
+        .part3_feature img {
+            width: 100%;
+            height: auto;
+        }
+
+        .part3_feature figcaption {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .part3_gallery {
+            display: flex;
+            gap: 12px;
+            padding-top: 40px;
+        }
+
+        .part3_item {
+            flex: 1 1 0;
+        }
+
+        .part3_item a {
+            display: block;
+        }
+
+        .part3_item img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .part3_item figcaption {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        .part3_notes {
+            padding-bottom: 0;
+        }
     </style>
 
 </head>
@@ -206,13 +258,16 @@
             <div class="main_description clearfix part1_notes">
                 <h2>What changes across the series?</h2>
                 <p>
-                    I took the first portrait from very close range, then stepped farther away while increasing the
-                    focal length to keep my face at roughly the same size in each frame. At 12 mm, my nose is much
-                    closer to the camera than my ears and the sides of my face, so it projects disproportionately
-                    large and creates the familiar distorted selfie look. As the camera moves back, those depth
-                    differences become small relative to the total camera-to-subject distance, and my facial
-                    proportions appear more natural. The longer focal length restores similar framing; the change in
-                    perspective can come from the greater camera distance.
+                    When taking photos close to the camera (e.g., at 12 mm focal length), most part of the central portion of the face can be thought of as orthogonal
+                    to the light rays connecting the camera's optical center and the face's surface. In contrast, the sides of the face appear to be parallel to the
+                    rays that ejected from the optical center, thus, large areas on the sides of the face would be projected onto a relatively narrow zone on the image plan, 
+                    showing server distortion on the images. In addition, since the nose is closer to the camera when compared to the ears,   
+                    so it projects disproportionately large. This can be explained by similar triangle. For a fixed focal length, in order to occupy the same area 
+                    on the image plan, the cross-sectional area of the object should grow proportionally as depth to maintain the same height-to-depth ratio. 
+                    This explains why even though the nose and the ear may have then same physical height, 
+                    but when projecting onto the image plane, since the nose has a large height-to-depth ratio than the ears (when the camera is close to the face),
+                    so the nose appears much larger than ears on the image plane. 
+                    As the camera moves back, those height-to-depth ratio differences become small for every part of the face, thus the facial proportions appear more natural. 
                 </p>
             </div>
         </div>
@@ -247,14 +302,24 @@
             <div class="main_description clearfix part2_notes">
                 <h2>Why does the perspective look compressed?</h2>
                 <p>
-                    I took the 75 mm photo from farther away, then walked toward the building and used 24 mm so the
-                    facade would fill roughly the same area of the frame. In the close 24 mm view, the near side of
-                    the building is much closer to the camera than the far side, so it projects larger and the facade
-                    appears to recede sharply. From farther away, the depth of the building is small relative to the
-                    total camera distance, so the near and far sections project at more similar sizes. The facade
-                    therefore looks flatter, and the trees and background tower appear pulled toward it. The longer
-                    focal length restores the framing; the greater camera distance creates the compressed
-                    perspective.
+                    Similar to Part 1, the 3D perspective of the object mainly depends on the relative depth of the
+                    different parts of the buildings with respect to the distance to camera. Suppose the front-end
+                    of the building to the camera is, d, and the back-end of the object to the front-end is, l,
+                    and the camera has a focal length of, f. Then, the image scale for the front-end is 
+                    <br>
+                    <p style="text-align: center">f/d,</p> <br>
+                    and the scale for the back-end is <p style="text-align: center">f/(d+l).</p> <br>
+                    So the relative ratio of the two image scale is 
+                    <p style="text-align: center">d/d+l.</p> <br>
+                    In the 24 mm view, the near side of the building is much closer to the camera than the far side 
+                    (l is relatively large when compared to d), so f/d > f/(d+l). 
+                    From farther away, the depth of the building is small relative to the
+                    total camera distance (l is relatively small when compared to d), 
+                    so the near and far sections project at more similar sizes f/d ~ f/(d+l). 
+                    The far- and the close-end appears almost on the same plane, therefore looks flatter, 
+                    and the trees and background tower appear pulled toward it. 
+                    The longer focal length restores the framing, but not the 3D perspective feeling; 
+                    the greater camera distance creates the compressed perspective.
                 </p>
             </div>
         </div>
@@ -266,26 +331,88 @@
                 <h2>Part 3: The Dolly Zoom</h2>
             </div>
 
-            <div class="main_left">
-                <a href="">
-                    <img src="" alt="TBD">
+            <figure class="part3_feature">
+                <a href="media/part3/bottle_animation.gif">
+                    <img src="media/part3/bottle_animation.gif" loading="lazy"
+                        alt="Animated dolly zoom in which the bottle stays the same size while the background expands">
                 </a>
+                <figcaption>Dolly zoom &middot; 14 mm to 101 mm &middot; camera pulled back while zooming in</figcaption>
+            </figure>
+
+            <div class="part3_gallery">
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_14mm.jpg">
+                        <img src="media/part3/bottle_14mm.jpg"
+                            alt="Dolly zoom still at 14 mm, camera closest to the bottle">
+                    </a>
+                    <figcaption>14 mm</figcaption>
+                </figure>
+
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_21mm.jpg">
+                        <img src="media/part3/bottle_21mm.jpg" alt="Dolly zoom still at 21 mm">
+                    </a>
+                    <figcaption>21 mm</figcaption>
+                </figure>
+
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_24mm.jpg">
+                        <img src="media/part3/bottle_24mm.jpg" alt="Dolly zoom still at 24 mm">
+                    </a>
+                    <figcaption>24 mm</figcaption>
+                </figure>
+
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_36mm.jpg">
+                        <img src="media/part3/bottle_36mm.jpg" alt="Dolly zoom still at 36 mm">
+                    </a>
+                    <figcaption>36 mm</figcaption>
+                </figure>
+
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_44mm.jpg">
+                        <img src="media/part3/bottle_44mm.jpg" alt="Dolly zoom still at 44 mm">
+                    </a>
+                    <figcaption>44 mm</figcaption>
+                </figure>
+
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_59mm.jpg">
+                        <img src="media/part3/bottle_59mm.jpg" alt="Dolly zoom still at 59 mm">
+                    </a>
+                    <figcaption>59 mm</figcaption>
+                </figure>
+
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_73mm.jpg">
+                        <img src="media/part3/bottle_73mm.jpg" alt="Dolly zoom still at 73 mm">
+                    </a>
+                    <figcaption>73 mm</figcaption>
+                </figure>
+
+                <figure class="part3_item">
+                    <a href="media/part3/bottle_101mm.jpg">
+                        <img src="media/part3/bottle_101mm.jpg"
+                            alt="Dolly zoom still at 101 mm, camera farthest from the bottle">
+                    </a>
+                    <figcaption>101 mm</figcaption>
+                </figure>
             </div>
 
-            <div class="main_right">
-
-                <h3>Project Tasks</h3>
-
-                <ul>
-                    <li>TDB</li>
-                    <li>TBD</li>
-                    <li class="publication">
-                        TBD
-                    </li>
-                    <li>Date: TBD</li>
-
-                </ul>
-
+            <div class="main_description clearfix part3_notes">
+                <h2>How does the dolly zoom work?</h2>
+                <p>
+                    I moved the camera backward while increasing the focal length from 14 mm to 101 mm, adjusting
+                    both together so the bottle stayed roughly the same size in every frame. As the camera retreats,
+                    the longer focal length narrows the field of view and magnifies the background, while the greater
+                    camera distance flattens the apparent depth between background objects. At 14 mm, the frame shows
+                    the window and most of the desk around the bottle. By 101 mm, the monitor and laptop fill the
+                    background and appear pressed into a flatter plane, even though the bottle barely changes size.
+                    As in the first two parts, camera distance drives the perspective change while focal length
+                    restores the subject's framing. When putting together, it results in a zooming-in effect of the 
+                    subject. One should also note that, if we reverese the order, we obtain a fade-away feeling of
+                    the subject, even though it remains about the same area on the image plane.
+                </p>
             </div>
         </div>
 
