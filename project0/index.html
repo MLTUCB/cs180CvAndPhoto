@@ -53,6 +53,35 @@
         .part1_notes {
             padding-bottom: 0;
         }
+
+        .part2_gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .part2_item {
+            flex: 1 1 0;
+        }
+
+        .part2_item a {
+            display: block;
+        }
+
+        .part2_item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .part2_item figcaption {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .part2_notes {
+            padding-bottom: 0;
+        }
     </style>
 
 </head>
@@ -142,7 +171,7 @@
                     <a href="media/part1/self_12mm.jpg">
                         <img src="media/part1/self_12mm.jpg" alt="Selfie taken at 12 mm from close range">
                     </a>
-                    <figcaption>12 mm &middot; closest &middot; the wrong way</figcaption>
+                    <figcaption>12 mm </figcaption>
                 </figure>
 
                 <figure class="part1_item">
@@ -170,7 +199,7 @@
                     <a href="media/part1/self_120mm.jpg">
                         <img src="media/part1/self_120mm.jpg" alt="Selfie taken at 120 mm from farther away">
                     </a>
-                    <figcaption>120 mm &middot; farthest &middot; the right way</figcaption>
+                    <figcaption>120 mm </figcaption>
                 </figure>
             </div>
 
@@ -195,26 +224,38 @@
                 <h2>Part 2: Architectural Perspective Compression</h2>
             </div>
 
-            <div class="main_left">
-                <a href="">
-                    <img src="" alt="TBD">
-                </a>
+            <div class="part2_gallery">
+                <figure class="part2_item">
+                    <a href="media/part2/building_75mm.jpg">
+                        <img src="media/part2/building_75mm.jpg"
+                            alt="Building facade photographed at 75 mm from farther away">
+                    </a>
+                    <figcaption>75 mm &middot; stepped back and zoomed &middot; compressed perspective</figcaption>
+                </figure>
+
+                <figure class="part2_item">
+                    <a href="media/part2/building_24mm.jpg">
+                        <img src="media/part2/building_24mm.jpg"
+                            alt="Building facade photographed at 24 mm from close range">
+                    </a>
+                    <figcaption>24 mm &middot; walked close &middot; depth preserved</figcaption>
+                </figure>
+
+
             </div>
 
-            <div class="main_right">
-
-                <h3>Project Tasks</h3>
-
-                <ul>
-                    <li>TDB</li>
-                    <li>TBD</li>
-                    <li class="publication">
-                        TBD
-                    </li>
-                    <li>Date: TBD</li>
-
-                </ul>
-
+            <div class="main_description clearfix part2_notes">
+                <h2>Why does the perspective look compressed?</h2>
+                <p>
+                    I took the 75 mm photo from farther away, then walked toward the building and used 24 mm so the
+                    facade would fill roughly the same area of the frame. In the close 24 mm view, the near side of
+                    the building is much closer to the camera than the far side, so it projects larger and the facade
+                    appears to recede sharply. From farther away, the depth of the building is small relative to the
+                    total camera distance, so the near and far sections project at more similar sizes. The facade
+                    therefore looks flatter, and the trees and background tower appear pulled toward it. The longer
+                    focal length restores the framing; the greater camera distance creates the compressed
+                    perspective.
+                </p>
             </div>
         </div>
 
