@@ -22,6 +22,39 @@
     <!-- import the projects.css css style file -->
     <link rel="stylesheet" href="../css/projects.css">
 
+    <style>
+        .part1_gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .part1_item {
+            flex: 1 1 0;
+        }
+
+        .part1_item a {
+            display: block;
+        }
+
+        .part1_item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center 40%;
+        }
+
+        .part1_item figcaption {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .part1_notes {
+            padding-bottom: 0;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -99,39 +132,59 @@
         <!-- Task 1 -->
         <div class="main_block clearfix">
             <div class="main_center clearfix">
-                    <h2>
-                        Part 1: Selfie: The Wrong Way vs. The Right Way
-                    </h2>
+                <h2>
+                    Part 1: Selfie: The Wrong Way vs. The Right Way
+                </h2>
             </div>
 
-            <div class="main_left">
+            <div class="part1_gallery">
+                <figure class="part1_item">
+                    <a href="media/part1/self_12mm.jpg">
+                        <img src="media/part1/self_12mm.jpg" alt="Selfie taken at 12 mm from close range">
+                    </a>
+                    <figcaption>12 mm &middot; closest &middot; the wrong way</figcaption>
+                </figure>
 
-                <!-- <video src="media/AER1513 Project VO.mp4" controls="controls" controlsList="nodownload" muted="muted" preload="metadata" poster="images/VO_project_thumbnail.png"></video> -->
-                <a href="project0/index.html">
-                    <img src="project0/media/part3/bottle_animation.gif" alt="bottle_animation.gif">
-                </a>
+                <figure class="part1_item">
+                    <a href="media/part1/self_24mm.jpg">
+                        <img src="media/part1/self_24mm.jpg" alt="Selfie taken at 24 mm">
+                    </a>
+                    <figcaption>24 mm</figcaption>
+                </figure>
+
+                <figure class="part1_item">
+                    <a href="media/part1/self_48mm.jpg">
+                        <img src="media/part1/self_48mm.jpg" alt="Selfie taken at 48 mm">
+                    </a>
+                    <figcaption>48 mm</figcaption>
+                </figure>
+
+                <figure class="part1_item">
+                    <a href="media/part1/self_74mm.jpg">
+                        <img src="media/part1/self_74mm.jpg" alt="Selfie taken at 74 mm">
+                    </a>
+                    <figcaption>74 mm</figcaption>
+                </figure>
+
+                <figure class="part1_item">
+                    <a href="media/part1/self_120mm.jpg">
+                        <img src="media/part1/self_120mm.jpg" alt="Selfie taken at 120 mm from farther away">
+                    </a>
+                    <figcaption>120 mm &middot; farthest &middot; the right way</figcaption>
+                </figure>
             </div>
 
-            <div class="main_right">
-
-                <h3>Project Tasks</h3>
-
-                <ul>
-
-                    <li class="publication"> Part 1: Selfie: The Wrong Way vs. The Right Way
-
-                    </li>
-
-                    <li class="publication"> Part 2: Architectural Perspective Compression
-                    </li>
-
-
-                    <li class="publication">Part 3: The Dolly Zoom</li>
-
-                    <li>Date: 2026-September-01</li>
-
-                </ul>
-
+            <div class="main_description clearfix part1_notes">
+                <h2>What changes across the series?</h2>
+                <p>
+                    I took the first portrait from very close range, then stepped farther away while increasing the
+                    focal length to keep my face at roughly the same size in each frame. At 12 mm, my nose is much
+                    closer to the camera than my ears and the sides of my face, so it projects disproportionately
+                    large and creates the familiar distorted selfie look. As the camera moves back, those depth
+                    differences become small relative to the total camera-to-subject distance, and my facial
+                    proportions appear more natural. The longer focal length restores similar framing; the change in
+                    perspective can come from the greater camera distance.
+                </p>
             </div>
         </div>
 
@@ -139,7 +192,7 @@
         <!-- Task 2 -->
         <div class="main_block clearfix">
             <div class="main_center clearfix">
-                <h2>Part 2: Images of the Russian Empire - Colorizing the Prokudin-Gorskii Photo Collection</h2>
+                <h2>Part 2: Architectural Perspective Compression</h2>
             </div>
 
             <div class="main_left">
@@ -169,7 +222,7 @@
         <!-- Task 3 -->
         <div class="main_block clearfix">
             <div class="main_center clearfix">
-                <h2>Part 3: Fun with Filters and Frequencies</h2>
+                <h2>Part 3: The Dolly Zoom</h2>
             </div>
 
             <div class="main_left">
